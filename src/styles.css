@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #B8860B url("../public/img/cork-bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+
+header {
+  margin: 10px;
+}
+
+header h1 {
+  color: #FDE58B;
+  text-shadow: 4px 4px #3C490D;
+  font-family: "Concert One", Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+header .controls {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+}
+
+header button,
+header input {
+  border: 2px solid darkgray;
+  font-size: 0.875em;
+  padding: 5px;
+}
+
+header button {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+header input[type="search"] {
+  flex-grow: 1;
+  font-weight: 400;
+  margin-left: 1em;
+  max-width: 300px;
+}
+
+.notes-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+.note {
+  background-color: lightyellow;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #444444;
+  /* flex + flex-grow makes textarea fill note */
+  display: flex;
+  flex-direction: column;
+  font-family: "Permanent Marker", "Comic Sans MS", Arial, Helvetica, sans-serif;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+  width: 200px;
+}
+
+.note .title,
+.note .description {
+  background: transparent;
+  border: none; /* in firefox and chrome the borders look bad */
+  font-family: "Permanent Marker", "Comic Sans MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  width: 100%;
+}
+
+.note .title {
+  font-size: 1em;
+  font-weight: bold;
+  border-bottom: 1px solid darkgray;
+}
+
+.note .description {
+  flex-grow: 1;
+  font-size: 0.875em;
+  /* in firefox and chrome borders look bad! */
+  border: none;
+}
+
+.note .remove {
+  color: darkgray;
+  font-size: 1.25em;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+}
+
+.note .remove:hover {
+  color: #333333;
+  cursor: pointer;
+}
