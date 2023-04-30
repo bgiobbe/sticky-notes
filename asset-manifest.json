@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sticky-notes/static/css/main.4965b528.css",
+    "main.js": "/sticky-notes/static/js/main.78e98d3b.js",
+    "static/media/cork-bg.jpg": "/sticky-notes/static/media/cork-bg.7c719035975881bb7926.jpg",
+    "index.html": "/sticky-notes/index.html",
+    "main.4965b528.css.map": "/sticky-notes/static/css/main.4965b528.css.map",
+    "main.78e98d3b.js.map": "/sticky-notes/static/js/main.78e98d3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4965b528.css",
+    "static/js/main.78e98d3b.js"
+  ]
+}
